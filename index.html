@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  
+  <title>Mi Portafolio 3D</title>
+
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Model Viewer (para el 3D después) -->
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <h1>Tu Nombre Aquí</h1>
+    <p>Frontend Developer | Blender | 3D Web</p>
+  </header>
+
+  <!-- HERO / PRESENTACIÓN -->
+  <section class="hero">
+
+    <!-- INFO -->
+    <div class="info">
+      <h2>Sobre mí</h2>
+      <p>
+        Soy estudiante apasionado por el desarrollo web y la creación de experiencias 3D interactivas.
+        Este proyecto muestra mis habilidades en diseño, programación y modelado.
+      </p>
+
+      <button id="themeBtn">Cambiar tema</button>
+    </div>
+
+    <!-- MODELO 3D (aquí irá tu GLB después) -->
+    <div class="model-container">
+
+      <model-viewer
+src="assets/images/3d/setup.glb"        alt="Modelo 3D de mi setup"
+        auto-rotate
+        camera-controls
+        shadow-intensity="1"
+      ></model-viewer>
+
+    </div>
+
+  </section>
+
+  <!-- HABILIDADES -->
+  <section class="section">
+    <h2>Habilidades</h2>
+
+    <div class="skills">
+      <div>HTML</div>
+      <div>CSS</div>
+      <div>JavaScript</div>
+      <div>Blender</div>
+      <div>UI Design</div>
+    </div>
+  </section>
+
+  <!-- PROYECTOS -->
+  <section class="section">
+    <h2>Proyectos</h2>
+
+    <div class="project-card">
+      <h3>Proyecto Rive Animation</h3>
+      <p>Animación interactiva usando Rive para web.</p>
+    </div>
+
+  </section>
+
+  <!-- CONTACTO -->
+  <section class="section">
+    <h2>Contacto</h2>
+    <p>Email: tuemail@example.com</p>
+    <p>GitHub: github.com/tuusuario</p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© 2026 Tu Nombre. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
+
+<model-viewer
+  src="assets/images/3d/setup.glb"
+  auto-rotate
+  camera-controls
+  exposure="2"
+  shadow-intensity="1"
+  camera-orbit="45deg 75deg 2m"
+  min-camera-orbit="auto auto 1m"
+  max-camera-orbit="auto auto 10m"
+  style="width: 700px; height: 700px;">
+</model-viewer>
