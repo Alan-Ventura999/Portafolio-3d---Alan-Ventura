@@ -145,4 +145,3 @@ Si tu repositorio no tiene el archivo `README.md`:
 | Editar README | GitHub.com → tu repositorio → README.md → ✏️ |
 | Crear README | GitHub.com → Add file → Create new file → `README.md` |
 
-**¿Ya lo lograste?** Dime si ves el README actualizado en tu repositorio. 🚀
