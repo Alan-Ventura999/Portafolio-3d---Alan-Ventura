@@ -1,85 +1,148 @@
-# Interactive 3D Developer Portfolio & Gaming Setup
+# Interactive 3D Portfolio | Alan Ventura
 
-Welcome to my professional **3D WebGL Portfolio**. This digital experience showcases the intersection of low-poly hard-surface 3D modeling in Blender and modern semantic frontend engineering. It serves as my official final project for the **Graficación** curriculum.
-
-🖥️ **Live Deployment:** [View Portfolio Live](https://alan-ventura999.github.io/Portafolio-3d---Alan-Ventura/)
-📂 **GitHub Repository:** [Alan-Ventura999/Portafolio-3d---Alan-Ventura](https://github.com/Alan-Ventura999/Portafolio-3d---Alan-Ventura)
-
----
+[![GitHub Pages](https://img.shields.io/badge/Website-Live-blue)](https://alan-ventura999.github.io/Portafolio-3d---Alan-Ventura/)
+[![Blender](https://img.shields.io/badge/Blender-3D-orange)](https://www.blender.org/)
+[![Flutter](https://img.shields.io/badge/Flutter-Rive-blue)](https://flutter.dev/)
 
 ## 🎯 Project Overview
 
-This project consists of an interactive 3D website representing a developer/gamer workstation setup. It acts as an authentic personal portfolio, presenting technical skills, structured projects, a responsive dark-first design interface, and dynamic JavaScript WebGL manipulation.
+This is my final project for the **Computer Graphics** course. A modern, interactive portfolio website featuring:
 
----
+- **3D Gamer Setup** modeled in Blender (7 custom assets)
+- **Interactive WebGL Viewer** with orbit controls
+- **Flutter + Rive Login App** with animated character
+- **Responsive Design** with Dark/Light mode
 
-## 🛠️ Selected Workstation Setup Elements (The 7 Core Assets)
+## 🛠️ Tech Stack
 
-To satisfy the academic rubric requirements, my 3D scene incorporates a custom programmer/gamer desk layout featuring exactly **7 distinct assets** (optimized under the maximum limit of 7 imported assets). Here is the breakdown:
+| Technology | Purpose |
+|------------|---------|
+| **Blender 4.x** | 3D modeling and GLB export |
+| **HTML5 + CSS3** | Structure and glassmorphic styling |
+| **JavaScript** | Interactivity and theme toggles |
+| **Model-Viewer** | WebGL 3D rendering |
+| **Flutter** | Cross-platform login app |
+| **Rive** | Vector animations and state machines |
 
-1. 🎮 **Gaming Desk** *(Modeled by student from basic primitives)* - A custom-shaped wooden desk with metal supportive frames.
-2. 🖥️ **Ultra-Wide Curved Gaming Monitor** *(Modeled by student)* - Low-poly display panel featuring a custom emission texture simulating a programming workspace environment.
-3. ⌨️ **Mechanical Keyboard** *(Modeled by student)* - Individually defined low-poly keycaps and custom backboard geometry.
-4. 🖱️ **Gaming Mouse** *(Modeled by student)* - Ergonomic, angular mouse design modeled from hard-surface primitives.
-5. 🔋 **PC Tower with Transparent Glass** *(Modeled by student)* - Computer chassis featuring internal graphical cards, neon glowing cooling fans, and detailed structural housing.
-6. 💺 **Ergonomic Developer Chair** *(Imported Asset)* - A highly detailed racing-style gaming chair asset, fully optimized and retopologized to fit the low-poly requirements of web rendering.
-7. 🌵 **Potted Desert Cactus Plant** *(Modeled by student)* - A creative extra accessory modeled to add organic shape variety and warmth to the technical setup layout.
+## 🎮 The 3D Setup (7 Assets)
 
----
+To meet the academic requirements, my scene includes exactly these 7 models:
 
-## 🔄 Technical Workflow: Blender ➔ glTF ➔ WebGL
+| # | Asset | Modeling |
+|---|-------|----------|
+| 1 | 🎮 Gaming Desk | Student-made |
+| 2 | 🖥️ Curved Monitor | Student-made |
+| 3 | ⌨️ Mechanical Keyboard | Student-made |
+| 4 | 🖱️ Gaming Mouse | Student-made |
+| 5 | 🔋 PC Tower with RGB | Student-made |
+| 6 | 💺 Ergonomic Chair | Optimized import |
+| 7 | 🌵 Potted Cactus | Student-made |
 
-To translate physical 3D designs into lightweight, responsive web experiences, I followed a professional pipeline:
+## ✨ Features
 
-### Phase 1: Low-Poly Mesh Modeling (Blender)
-- Modeled the setup items inside **Blender 4.x** with a strong emphasis on quad-topology, edge optimization, and polygon count discipline.
-- Utilized `Mirror` and `Bevel` modifiers to maintain sharp hard-surface borders while keeping the final scene triangle count below **~18,500 tris** to guarantee instant web loading times.
+- **Auto-rotate** 3D model toggle
+- **Day/Night lighting** cycle (exposure control)
+- **Camera reset** button
+- **Dark/Light theme** with localStorage persistence
+- **Flutter login app** with Rive animated bear
+- **Terminal-style logs** in About section
+- **Fully responsive** for mobile devices
 
-### Phase 2: UV Mapping & Lighting Setup
-- Seamlessly unwrapped the mesh seams to prevent texture distortions.
-- Applied PBR (Physically Based Rendering) material definitions aligning with standard Metallic/Roughness parameters.
-- Utilized emission shaders to create glowing gaming LEDs on the screens and PC tower fans.
+## 🚀 Live Demo
 
-### Phase 3: GLB/GLTF Export Compilation
-- Exported the complete scene hierarchy from Blender using the optimized binary **GLTF 2.0 (.glb)** container format.
-- Staged the export parameters to include custom material parameters, texture packing, and camera orientation matrices.
+Visit the live portfolio:  
+🔗 **[alan-ventura999.github.io/Portafolio-3d---Alan-Ventura](https://alan-ventura999.github.io/Portafolio-3d---Alan-Ventura/)**
 
-### Phase 4: WebGL Integration & Interactive Manipulation
-- Integrated the `.glb` container within [index.html](file:///c:/Escuela/Graficaci%C3%B3n/Proyecto%20Final%20-%20portafolio%203D/index.html) using the high-performance `<model-viewer>` WebGL engine.
-- Configured dynamic camera parameters using the `camera-orbit` attribute to prevent model invisibility or viewport clipping.
-- Engineered a custom **Control Panel HUD overlay** in HTML/CSS.
-- Developed an interactive **Day & Night Exposure Cycle** in JavaScript, enabling users to programmatically change the lighting parameters of the 3D scene at the click of a button.
+## 📂 Project Structure
+Portafolio-3d---Alan-Ventura/
+├── index.html # Main portfolio page
+├── styles.css # Glassmorphic styles
+├── script.js # Interactivity logic
+├── README.md # This file
+├── assets/
+│ ├── 3d/
+│ │ └── setup.glb # Exported 3D model
+│ ├── blender/
+│ │ └── setup.blend # Original Blender file
+│ └── rive/ # Rive animations
+└── flutter-login/ # Flutter web app
+├── index.html
+├── main.dart.js
+└── assets/
 
----
 
-## ✨ Features & Interactive Systems
+## 🧪 Run Locally
 
-- 🌌 **Cyber Glassmorphic Theme:** Developed a premium dark-first CSS design system featuring blurred transparent backdrops (`backdrop-filter`) and smooth neon glowing borders.
-- 🌞 **Responsive Theme Toggle:** Sleek transitions between Cyber Dark and Soft Slate Light themes, with user preferences cached using `localStorage`.
-- 🕹️ **Active 3D HUD Interface:**
-  - **Auto-rotate toggle:** Starts or pauses the orbital rotation.
-  - **Exposure lighting cycle:** Switches between Day Workspace mode (Bright 1.7 exposure), Gamer Night mode (Cyber neon 0.45 exposure), and Neutral Studio mode (1.0 exposure).
-  - **Camera reset:** Smoothly aligns the perspective back to the default overview angle.
-- 📟 **Simulated retro programmer console:** Displays active system status updates, asset load completions, and interaction event records.
-- 📐 **Responsive Flexbox/Grid Layout:** Fits perfectly on wide 4K displays, laptop viewports, and mobile phone screens.
-- 🎨 **Rive Vector Animation Container:** Includes a dedicated, custom-styled media container primed for high-performance vector rendering.
-
----
-
-## 🚀 Local Running Guide
-
-To launch and run the portfolio locally:
-
-### Option A: Direct Launch
-Simply double-click the [index.html](file:///c:/Escuela/Graficaci%C3%B3n/Proyecto%20Final%20-%20portafolio%203D/index.html) file to open it in any modern browser.
-
-### Option B: Local Web Server (Recommended for GLB caching)
-To run a local web server for smooth asset fetching:
 ```bash
-# Using Node.js npx:
-npx serve .
-
-# Or using Python:
+# Using Python
 python -m http.server 8000
-```
-Then visit `http://localhost:3000` or `http://localhost:8000` in your web browser.
+
+# Using VS Code Live Server extension
+# Right-click index.html → Open with Live Server
+
+🎓 About the Author
+Alan Ventura - 5th semester student of Computer Systems Engineering at Instituto Tecnológico de Mérida (ITM).
+
+Passionate about 3D modeling, frontend development, and interactive animations.
+
+📧 Contact
+Email: djhjdhuiir@gmail.com
+
+GitHub: @Alan-Ventura999
+
+📄 License
+This project was created for academic purposes as part of the Computer Graphics course.
+
+6. **Al final de la página**, escribe un mensaje de commit como:
+docs: update README with professional portfolio description
+
+
+7. **Haz clic en "Commit changes"** (botón verde)
+
+---
+
+## ✅ Resultado
+
+Después de guardar, ve a la página principal de tu repositorio. Verás el README con:
+- Badges de colores
+- Tablas organizadas
+- Emojis
+- Código formateado
+- Enlaces
+
+---
+
+## 🖼️ Captura de cómo se verá
+
+Tu README se verá algo así:
+┌─────────────────────────────────────────────────────────────┐
+│ # Interactive 3D Portfolio | Alan Ventura │
+│ [Website-Live] [Blender-3D] [Flutter-Rive] │
+│ │
+│ ## 🎯 Project Overview │
+│ This is my final project for the Computer Graphics course │
+│ ... │
+└─────────────────────────────────────────────────────────────┘
+
+
+---
+
+## ⚠️ Si no ves el archivo README.md en GitHub
+
+Si tu repositorio no tiene el archivo `README.md`:
+
+1. Haz clic en **"Add file"** → **"Create new file"**
+2. Nombra el archivo: `README.md`
+3. Copia y pega el código de arriba
+4. Haz clic en **"Commit new file"**
+
+---
+
+## 📋 Resumen
+
+| Acción | Dónde |
+|--------|-------|
+| Editar README | GitHub.com → tu repositorio → README.md → ✏️ |
+| Crear README | GitHub.com → Add file → Create new file → `README.md` |
+
+**¿Ya lo lograste?** Dime si ves el README actualizado en tu repositorio. 🚀
