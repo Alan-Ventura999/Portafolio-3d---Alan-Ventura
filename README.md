@@ -31,12 +31,14 @@ To meet the academic requirements, my scene includes exactly these 7 models:
 | # | Asset | Modeling |
 |---|-------|----------|
 | 1 | 🎮 Gaming Desk | Student-made |
-| 2 | 🖥️ Curved Monitor | Student-made |
-| 3 | ⌨️ Mechanical Keyboard | Student-made |
-| 4 | 🖱️ Gaming Mouse | Student-made |
-| 5 | 🔋 PC Tower with RGB | Student-made |
-| 6 | 💺 Ergonomic Chair | Optimized import |
-| 7 | 🌵 Potted Cactus | Student-made |
+| 2 | 🖥️ Monitor | Student-made |
+| 3 | ⌨️ Mechanical Keyboard | Imported asset |
+| 4 | 🖱️ Gaming Mouse | Imported asset |
+| 5 | 🔋 PC Tower with RGB | Imported asset |
+| 6 | 💺 Gaming Chair | Imported asset |
+| 7 | Luffy | Imported asset |
+| 8 | Framed painting |Student-made |
+| 9 | Room |Student-made |
 
 ## ✨ Features
 
