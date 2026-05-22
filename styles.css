@@ -828,9 +828,9 @@ model-viewer {
   overflow: hidden;
 }
 
-/* Static setup background simulation */
+/* Static setup background simulation - CORREGIDO (sin imagen externa) */
 .static-bg-setup {
-  background: linear-gradient(rgba(11, 15, 25, 0.7), rgba(11, 15, 25, 0.75)), url('assets/images/project_3d.jpg') center/cover no-repeat;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
   display: flex;
   align-items: center;
   justify-content: center;
